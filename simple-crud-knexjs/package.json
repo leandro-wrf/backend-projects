@@ -1,0 +1,27 @@
+{
+  "name": "simple-crud-knexjs",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "nodemon src/server.js",
+    "start": "node src/server.js",
+    "pretest": "knex migrate:latest --env test",
+    "test": "jest",
+    "posttest": "knex migrate:rollback --env test"
+  },
+  "dependencies": {
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-plugin-import": "^2.21.2",
+    "express": "^4.17.1",
+    "knex": "^0.21.4",
+    "sqlite3": "^5.0.0"
+  },
+  "devDependencies": {
+    "eslint": "7.7.0",
+    "jest": "^26.4.0",
+    "nodemon": "^2.0.4",
+    "prettier": "^2.0.5",
+    "supertest": "^4.0.2"
+  }
+}

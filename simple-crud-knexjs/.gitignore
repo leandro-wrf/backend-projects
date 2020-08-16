@@ -1,0 +1,9 @@
+## npm packages
+node_modules
+
+## database
+__tests__/database/test.sqlite
+src/database/dev.sqlite
+
+## yarn
+yarn.lock
